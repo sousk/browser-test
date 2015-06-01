@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>browser test by sousk</title>
+
+    <link rel="stylesheet" href="../stylesheets/styles.css">
+    <link rel="stylesheet" href="../stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>browser test</h1>
+        <p></p>
+
+        <p class="view"><a href="https://github.com/sousk/browser-test">View the Project on GitHub <small>sousk/browser-test</small></a></p>
+
+
+        <!--ul>
+          <li><a href="https://github.com/sousk/browser-test/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/sousk/browser-test/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/sousk/browser-test">View On <strong>GitHub</strong></a></li>
+        </ul-->
+      </header>
+      <section>
+        <!--h1>
+<a id="browser-test" class="anchor" href="#browser-test" aria-hidden="true"><span class="octicon octicon-link"></span></a>browser test</h1-->
+
+<p>
+<a href="../">Back to Top</a>
+</p>
+
+<h2>
+Audio Element & Web Audio API Tester
+</h2>
+
+
+     <audio controls>  
+      <source src="TOHKA_feat_Raya.m4a" type="audio/mp3">   
+      <p>Browser too old to support HTML5 audio? How depressing!</p>
+    </audio>
+
+<ul>
+  <li>
+      <a data-audiotest="playHEAAC">Play HE-AAC</a>
+  </li>
+  <li>
+  <a data-audiotest="playHEAACthroughAudio">Play HE-AAC (Audio Element -&gt; GainNode) </a>
+  </li>
+  <li>
+      <a data-audiotest="playMP3">Play MP3</a>
+  </li>
+  <li>
+      <a data-audiotest="playAudioElement">AudioElement: Play HE-AAC</a>
+  </li>
+</ul>
+</ul>
+
+ <output></output>
+
+
+<div>
+  <ul>
+    <li>At Safari, audio element cannot be connected with Web Audio API even through createMediaElementSource, but Chrome does.</li>
+    <li>You have to control audio element to play sound. Web Audio API just works as a filter so that you cannot play if audio element is pused or muted.</li>
+    <li>
+    Note that: <ul>
+      <li>Audio Element requires explicit user action to start playing both on Mobile Safari and Chrome.</li>
+      <li>Web Audio API requires explicit user action only on Mobile Safari.</li>
+    </ul>
+  </ul>
+</div>
+
+
+<h1>
+<a id="credit" class="anchor" href="#credit" aria-hidden="true"><span class="octicon octicon-link"></span></a>Credit</h1>
+
+<ul>
+  <li>
+  <a href="https://soundcloud.com/nocopyrightsounds/vena-cava-tohka-feat-raya">BGM Vena Cava - TOHKA (feat. Raya) [NCS Release]</a></li>
+</ul>
+
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/sousk">sousk</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="../javascripts/scale.fix.js"></script>
+    <script src="./webaudioapi.js"></script>
+  </body>
+</html>
